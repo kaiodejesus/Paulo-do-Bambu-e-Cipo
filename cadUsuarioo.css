@@ -1,0 +1,22 @@
+body {
+    background-color: #f5f5f5;
+    color: #103604;
+}
+
+.card {
+    margin-top: 50px;
+    border: none;
+}
+
+.btn-primary {
+    background-color: #164418; /* Verde */
+    border-color: #046307;
+}
+
+.btn-primary:hover {
+    background-color: #036406;
+}
+
+.form-label {
+    color: #3a1509; /* Marrom */
+}
