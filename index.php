@@ -3,23 +3,23 @@ session_start();  // Inicia a sessão
 
 // Verifique se o formulário foi enviado
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-    require_once 'Usuario.class.php';  // Inclui a classe Usuario
+    require_once 'Usuario.class.php';  
 
     $email = $_POST['email'];
     $senha = $_POST['senha'];
 
-    // Cria um novo objeto Usuario
+    
     $usuario = new Usuario();
 
-    // Chama o método para autenticar o usuário
+  
     $resultado = $usuario->login($email, $senha);
 
     if ($resultado) {
-        // Se o login for bem-sucedido, redireciona para a página principal
+        
         header("Location: paginaHomee/paginaHome/indexpaulo.php");
         exit();
     } else {
-        // Caso o login falhe, exibe uma mensagem de erro
+        S
         $erro = "E-mail ou senha inválidos!";
     }
 }
