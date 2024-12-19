@@ -19,7 +19,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         header("Location: paginaHomee/paginaHome/indexpaulo.php");
         exit();
     } else {
-        S
+        
         $erro = "E-mail ou senha inválidos!";
     }
 }
