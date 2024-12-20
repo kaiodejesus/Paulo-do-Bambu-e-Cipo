@@ -1,3 +1,4 @@
+/* Estilo geral */
 body {
     font-family: 'Libre Baskerville', serif;
     margin: 0;
@@ -7,11 +8,12 @@ body {
     color: #333;
 }
 
+/* Cabeçalho */
 header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px;
+    padding: 10px 20px;
     background: linear-gradient(0deg, #016924, #011407);
     color: white;
     position: fixed;
@@ -21,15 +23,31 @@ header {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+.logo1-container{
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100px; /* Ajuste a altura de acordo com a necessidade */
+}
+
+
+.logo1 img {
+    max-width: 80px;
+    height: auto;
+    align-items: center;
+    justify-self: center;   
+}
+
+/* Botão de menu */
 .menu-toggle {
     font-size: 24px;
     background: none;
     border: none;
     color: white;
     cursor: pointer;
-    position: relative;
+    position: absolute;
     z-index: 1100;
-    transition: color 0.4s ease;
+    transition: color 0.3s ease;
 }
 
 .menu-toggle i {
@@ -49,17 +67,9 @@ header {
     display: block;
 }
 
-.logo1 {
-    flex-grow: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100px;
-    height: 120px;
-}
-
+/* Menu de navegação */
 .nav-menu {
-    display: none;
+    display: flex;
     flex-direction: column;
     position: fixed;
     top: 0;
@@ -74,7 +84,6 @@ header {
 }
 
 .nav-menu.active {
-    display: flex;
     left: 0;
 }
 
@@ -98,56 +107,26 @@ header {
 }
 
 .nav-menu ul li a:hover {
-    background-color: #09001d; 
+    background-color: #09001d;
     padding-left: 30px;
 }
 
+/* Espaçamento principal */
 main {
-    padding: 1;
+    padding-top: 100px;
 }
 
-.hero {
-    background-image: url('img/pngtree-a-futuristic-perspective-the-expansive-texture-of-bamboo-image_13701099.png');
-    background-size: cover;
-    background-position: center;
-    height: 70vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    color: white;
-    padding: 100px;
+/* Animação de fade-in */
+.fade-in {
+    opacity: 0;
+    transition: opacity 1s ease-out;
 }
 
-.hero-content {
-    background: rgba(0, 0, 0, 0.5);
-    padding: 20px;
-    border-radius: 10px;
+.appear {
+    opacity: 1;
 }
 
-.hero h1 {
-    font-size: 2.5rem;
-    margin: 0;
-}
-
-.hero p {
-    font-size: 1.2rem;
-    margin: 48px 0;
-}
-
-.cta-button {
-    background: #28a745;
-    color: white;
-    padding: 15px 25px;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
-}
-
-.cta-button:hover {
-    background: #218838;
-}
-
+/* Rodapé */
 footer {
     text-align: center;
     padding: 10px;
@@ -158,6 +137,7 @@ footer {
     width: 100%;
 }
 
+/* Ícones de redes sociais */
 .social-media-icons {
     display: flex;
     justify-content: center;
@@ -176,9 +156,15 @@ footer {
     transform: scale(1.2);
 }
 
-.social-media-icons a.instagram:hover {background-image: linear-gradient(10deg,#fcb045, #fd1d1d, #833ab4);}
-.social-media-icons a.whatsapp:hover { color: #25D366; }
+.social-media-icons a.instagram:hover {
+    background-image: linear-gradient(10deg, #fcb045, #fd1d1d, #833ab4);
+}
 
+.social-media-icons a.whatsapp:hover {
+    color: #25D366;
+}
+
+/* Responsividade */
 @media (max-width: 768px) {
     .menu-toggle {
         display: block;
@@ -191,16 +177,4 @@ footer {
     .nav-menu.active {
         transform: translateX(0);
     }
-
-    main {
-        padding-top: 100px;
-    }
-    .fade-in {
-        opacity: 0;
-        transition: opacity 1s ease-out;
-      }
-      .appear {
-        opacity: 1;
-      }
-      
 }

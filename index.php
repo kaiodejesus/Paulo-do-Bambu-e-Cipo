@@ -16,7 +16,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
     if ($resultado) {
         
-        header("Location: paginaHomee/paginaHome/indexpaulo.php");
+        header("Location: paginaHome/indexpaulo.php");
         exit();
     } else {
         
@@ -53,6 +53,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                             </div>
                             <button type="submit" class="btn btn-primary w-100">Entrar</button>
                             <p>Não tem login? <a href="CadUsuarioo.html">Cadastre-se aqui</a></p>
+                            <p> <a href="CadUsuarioo.html">Cadastre-se aqui</a></p>
                         </form>
 
                         <?php if (isset($erro)): ?>
