@@ -53,7 +53,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                             </div>
                             <button type="submit" class="btn btn-primary w-100">Entrar</button>
                             <p>Não tem login? <a href="CadUsuarioo.html">Cadastre-se aqui</a></p>
-                            <p> <a href="CadUsuarioo.html">Cadastre-se aqui</a></p>
+                        
                         </form>
 
                         <?php if (isset($erro)): ?>
