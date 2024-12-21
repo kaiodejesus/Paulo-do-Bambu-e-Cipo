@@ -3,7 +3,7 @@
 class Produto extends CRUD{
     protected $table = "produto";
     private $codigo;
-    private $nomeProduto;
+    private $nomProduto;
     private $descricao;
     private $material;
     private $quantidade;
